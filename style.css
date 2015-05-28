@@ -1,0 +1,136 @@
+@import url(http://fonts.googleapis.com/css?family=Marvel);
+@import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great);
+
+body {
+  background-color: #504A4B;
+  background-image: url("images/background.jpg")
+}
+
+#container {
+  position: relative;
+  z-index: 10;
+}
+
+h1  {
+  z-index: 0;
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  font-family: 'Fredericka the Great', cursive;
+   color: rgba(0, 0, 0, .30);
+  font-size: 96px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -150px;
+}
+
+#controls {
+  background: url("http://www.clker.com/cliparts/q/l/x/X/K/u/pause.svg");
+}
+
+#control a {
+  text-decoration: none;
+}
+
+#left{
+  float:left;
+  width:40%;
+  height:100%;
+}
+
+#right{ 
+  float:left;
+  width : 60%;
+  height : 100%;
+
+}
+
+.beat {
+  height: 100px;
+  width: 100%;
+  background-size: 100px 100px;
+  background-repeat:no-repeat;
+  background-position:center;
+  position:absolute;
+  z-index:1;
+  transition:top 0.3s;
+}
+
+.beat.beat-a {
+  background-image: url("images/music-noteA.png");
+}
+
+.beat.beat-b {
+  background-image: url("images/music-noteB.png");
+}
+
+.beat.beat-c {
+  background-image: url("images/music-noteC.png");
+}
+
+.beat.beat-d {
+  background-image: url("images/music-noteD.png");
+}
+
+.beat.beat-e {
+  background-image: url("images/music-noteE.png");
+}
+
+#playlist ul {
+  list-style: none;
+  padding: 2px
+}
+
+#playlist ul li,
+  #scoreBoard {
+  color: white;
+  border: 2px solid #a41212;
+  width: 282px;
+  margin: 2px;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Marvel', sans-serif;
+  font-size: 24px;
+  background-color: #a41212;
+  transition: background 1s, border 1s;
+}
+
+#scoreBoard h2  {
+  font-size: 50px;
+  margin: 10px;
+  
+}
+
+#scoreBoard h3 {
+  
+  margin: 0px;
+  
+}
+
+#playlist ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#playlist ul li a small {
+  display: block;  
+}
+
+#playlist ul li:hover {
+  color: #FFF;
+  background-color: #F03232;
+  border-color: #F03232;
+  transition: background 1s, border 1s;
+} 
+
+#playlist ul li.active {
+  background-color:#FF5C5C;
+}
+
+#scoreBoard {
+   width: 282px;
+   
+  
+}

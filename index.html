@@ -1,0 +1,125 @@
+<html>
+  <head>
+      <title> </title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="track.css">
+      <style>
+      </style>
+</head>
+
+<body>
+  <h1>Droppin' Beats</h1>
+  <div class="" id="container">
+    <div id="left"> 
+      
+    <div id="control">
+      <a href="javascript:void(0);" onclick="pauseGame();">
+        <img src="images/pause.png">
+      </a>
+      <a href="javascript:void(0);" onclick="playGame();" class="play-button">
+        <img src="images/play.png">
+      </a>
+      <a href="javascript:void(0);" onclick="stopGame();">
+        <img src="images/restart.png">
+      </a>
+      </div>
+      <div id="playlist">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" onclick="loadSong(175074716);">
+              Impossible
+              <small>DJ Blazko</small>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="loadSong(175249723);">
+              Just Another Night
+              <small>DJ Blazko</small>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="loadSong(182866694);">
+              Grand Piano
+              <small>Nicki Minaj</small>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="loadSong(7991649);">
+              Heads Will Roll 
+              <small>Yeah Yeah Yeahs</small>
+            </a>
+            </li>
+          <li>
+            <a href="javascript:void(0);" onclick="loadSong(102106214);">
+              Love more
+              <small>Chris Brown</small>
+            </a>
+            </li>
+          <li>
+            <a href="javascript:void(0);" onclick="loadSong(158305649);">
+              Tum hi ho
+              <small>Loen Tuan</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <div id="scoreBoard">
+        <h2>0</h2>
+        <h3>Score</h3>
+      </div>
+      
+      
+    </div>
+  <div id="right">
+    <div class="track" id="track1">
+      <div class="button-container">
+        <div class="button button1"></div>
+      </div>
+    </div>
+     <div class="track" id="track2">
+       <div class="button-container">
+        <div class="button button2"></div>
+      </div>
+    </div>
+    
+     <div class="track" id="track3">
+       <div class="button-container">
+        <div class="button button3"></div>
+      </div>
+    </div>
+     <div class="track" id="track4">    
+       <div class="button-container">
+        <div class="button button4"></div>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+  <div class="fail modal hidden">
+      <br>
+      <h2 class="game-over"> GAME </h1>
+      <div class="fail-image"></div>
+      <h2 class="game-over"> OVER </h1>
+      <a href="#" id="try_again" class="try-again">Try Again </a>
+  </div>
+    <div class="win modal hidden">
+      <br><br><br>
+      <a href="#" id="try_again" class="try-again">Try Again </a>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script src="javascript/game.js" type="text/javascript"></script>
+<script src="javascript/playground.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>
